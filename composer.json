@@ -1,0 +1,73 @@
+{
+    "name": "rawand201/filament-kurdish-calendar",
+    "type": "library",
+    "description": "Nawroz-based Kurdish calendar for Filament tables, infolists, and date pickers",
+    "keywords": [
+        "filament",
+        "filament-plugin",
+        "kurdish",
+        "ckb",
+        "calendar",
+        "laravel"
+    ],
+    "homepage": "https://github.com/Rawand201/filament-kurdish-calendar",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/Rawand201/filament-kurdish-calendar/issues",
+        "source": "https://github.com/Rawand201/filament-kurdish-calendar"
+    },
+    "authors": [
+        {
+            "name": "Rawand201",
+            "email": "rawandrasool@proton.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^4.0|^5.0",
+        "illuminate/contracts": "^11.0|^12.0",
+        "nesbot/carbon": "^2.72|^3.0",
+        "spatie/laravel-package-tools": "^1.14"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.9",
+        "laravel/pint": "^1.29",
+        "nunomaduro/collision": "^8.9",
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^2.0|^3.0",
+        "pestphp/pest-plugin-arch": "^3.1",
+        "pestphp/pest-plugin-laravel": "^2.0|^3.0",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rawand\\FilamentKurdishCalendar\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rawand\\FilamentKurdishCalendar\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rawand\\FilamentKurdishCalendar\\FilamentKurdishCalendarServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse --configuration=phpstan.neon.dist"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

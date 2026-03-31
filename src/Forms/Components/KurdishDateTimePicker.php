@@ -1,0 +1,18 @@
+<?php
+
+namespace Rawand\FilamentKurdishCalendar\Forms\Components;
+
+use Filament\Forms\Components\DateTimePicker;
+use Rawand\FilamentKurdishCalendar\Forms\Components\Concerns\ConfiguresKurdishCalendarPicker;
+
+class KurdishDateTimePicker extends DateTimePicker
+{
+    use ConfiguresKurdishCalendarPicker;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->setUpKurdishCalendarPicker();
+    }
+}

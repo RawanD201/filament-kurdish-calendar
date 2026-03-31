@@ -1,0 +1,14 @@
+includes:
+  - vendor/larastan/larastan/extension.neon
+
+parameters:
+  level: 6
+  paths:
+    - src
+    - config
+    - tests
+  excludePaths:
+    analyse:
+      - vendor
+      - src/FilamentKurdishCalendarServiceProvider.php
+
