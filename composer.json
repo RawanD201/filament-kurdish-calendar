@@ -1,7 +1,7 @@
 {
     "name": "rawand201/filament-kurdish-calendar",
     "type": "library",
-    "description": "Nawroz-based Kurdish calendar for Filament tables, infolists, and date pickers",
+    "description": "Kurdish calendar for Filament tables, infolists, and date pickers",
     "keywords": [
         "filament",
         "filament-plugin",
