@@ -17,8 +17,6 @@ This package **does not change database storage**. Values are still stored as **
 | Laravel  | 11.x / 12.x |
 | Filament | ^4.0 \| ^5.0 |
 
-CI runs Pint, Pest, and PHPStan on PHP **8.2**, **8.3**, **8.4**, and **8.5**.
-
 ## Installation
 
 ```bash
@@ -73,7 +71,6 @@ KurdishDatePicker::make('birth_date');
 
 - **Nawroz** is **March 21** and is **month 1, day 1** (static).
 - **Displayed Kurdish year** = \(gregorianCycleYear + 700\).
-- **Month lengths**: base **6×31 + 5×30 + 29**, and the **12th month** becomes **29 or 30** to match the real span until next Nawroz (365/366 days).
 - **Month names** come from translations `filament-kurdish-calendar::months` (publish/override as needed).
 
 ## Formatting
