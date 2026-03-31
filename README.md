@@ -13,7 +13,7 @@ This package **does not change database storage**. Values are still stored as **
 
 |          | Version                                                 |
 | -------- | ------------------------------------------------------- |
-| PHP      | **8.2**, **8.3**, **8.4**, **8.5** (`^8.2` in Composer) |
+| PHP      | **8.2**, **8.3**, **8.4**, **8.5** (`>=8.2 <8.6` in Composer) |
 | Laravel  | 11.x / 12.x                                             |
 | Filament | ^4.0 \| ^5.0                                            |
 
@@ -128,7 +128,7 @@ composer analyse
 
 ## Compatibility
 
-- **PHP**: ^8.2 — tested on **8.2**, **8.3**, **8.4**, and **8.5**
+- **PHP**: `>=8.2 <8.6` (8.2–8.5) — tested on **8.2**, **8.3**, **8.4**, and **8.5**
 - **Laravel**: 11.x / 12.x
 - **Filament**: ^4.0 \| ^5.0
 
