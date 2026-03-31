@@ -3,7 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)
 [![Total Downloads](https://img.shields.io/packagist/dt/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)
 [![License](https://img.shields.io/packagist/l/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)
-[![CI](https://github.com/rawand201/filament-kurdish-calendar/actions/workflows/ci.yml/badge.svg)](https://github.com/rawand201/filament-kurdish-calendar/actions/workflows/ci.yml)
+[![CI](https://github.com/RawanD201/filament-kurdish-calendar/actions/workflows/ci.yml/badge.svg)](https://github.com/RawanD201/filament-kurdish-calendar/actions/workflows/ci.yml)
 
 Nawroz-based Kurdish calendar formatting and picker UI for Filament.
 

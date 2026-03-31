@@ -10,15 +10,15 @@
         "calendar",
         "laravel"
     ],
-    "homepage": "https://github.com/Rawand201/filament-kurdish-calendar",
+    "homepage": "https://github.com/RawanD201/filament-kurdish-calendar",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/Rawand201/filament-kurdish-calendar/issues",
-        "source": "https://github.com/Rawand201/filament-kurdish-calendar"
+        "issues": "https://github.com/RawanD201/filament-kurdish-calendar/issues",
+        "source": "https://github.com/RawanD201/filament-kurdish-calendar"
     },
     "authors": [
         {
-            "name": "Rawand201",
+            "name": "RawanD201",
             "email": "rawandrasool@proton.me",
             "role": "Developer"
         }
