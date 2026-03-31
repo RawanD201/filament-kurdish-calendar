@@ -134,11 +134,11 @@ composer analyse
 
 ## Changelog
 
-See `CHANGELOG.md`.
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Security
 
-See `SECURITY.md`.
+See [SECURITY.md](SECURITY.md).
 
 ## Local development (path repository)
 
@@ -152,4 +152,4 @@ If you published `config/filament-kurdish-calendar.php` into the app, merge new 
 
 ## License
 
-MIT. See `LICENSE.md`.
+MIT. See [LICENSE.md](LICENSE.md).
