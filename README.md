@@ -11,11 +11,11 @@ This package **does not change database storage**. Values are still stored as **
 
 ## Requirements
 
-|          | Version |
-| -------- | ------- |
+|          | Version                                                 |
+| -------- | ------------------------------------------------------- |
 | PHP      | **8.2**, **8.3**, **8.4**, **8.5** (`^8.2` in Composer) |
-| Laravel  | 11.x / 12.x |
-| Filament | ^4.0 \| ^5.0 |
+| Laravel  | 11.x / 12.x                                             |
+| Filament | ^4.0 \| ^5.0                                            |
 
 ## Installation
 
@@ -69,8 +69,6 @@ KurdishDatePicker::make('birth_date');
 
 ## Calendar rules
 
-- **Nawroz** is **March 21** and is **month 1, day 1** (static).
-- **Displayed Kurdish year** = \(gregorianCycleYear + 700\).
 - **Month names** come from translations `filament-kurdish-calendar::months` (publish/override as needed).
 
 ## Formatting
