@@ -42,18 +42,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Rawand\\FilamentKurdishCalendar\\": "src/"
+            "Rawand201\\FilamentKurdishCalendar\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rawand\\FilamentKurdishCalendar\\Tests\\": "tests/"
+            "Rawand201\\FilamentKurdishCalendar\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Rawand\\FilamentKurdishCalendar\\FilamentKurdishCalendarServiceProvider"
+                "Rawand201\\FilamentKurdishCalendar\\FilamentKurdishCalendarServiceProvider"
             ]
         }
     },

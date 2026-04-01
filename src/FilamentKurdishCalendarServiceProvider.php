@@ -1,6 +1,6 @@
 <?php
 
-namespace Rawand\FilamentKurdishCalendar;
+namespace Rawand201\FilamentKurdishCalendar;
 
 use Closure;
 use Filament\Infolists\Components\TextEntry;
@@ -8,7 +8,7 @@ use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Carbon;
-use Rawand\FilamentKurdishCalendar\Support\KurdishCalendarFormatter;
+use Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarFormatter;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

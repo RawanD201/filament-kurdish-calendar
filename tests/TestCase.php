@@ -1,9 +1,9 @@
 <?php
 
-namespace Rawand\FilamentKurdishCalendar\Tests;
+namespace Rawand201\FilamentKurdishCalendar\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Rawand\FilamentKurdishCalendar\FilamentKurdishCalendarServiceProvider;
+use Rawand201\FilamentKurdishCalendar\FilamentKurdishCalendarServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -1,5 +1,5 @@
 <?php
 
-use Rawand\FilamentKurdishCalendar\Tests\TestCase;
+use Rawand201\FilamentKurdishCalendar\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

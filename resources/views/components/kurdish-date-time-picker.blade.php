@@ -34,14 +34,14 @@
     $livewireKey = $getLivewireKey();
 
     $kurdishRules = [
-        'yearOffset' => \Rawand\FilamentKurdishCalendar\Support\KurdishCalendarConverter::YEAR_OFFSET,
-        'nawrozMonth' => \Rawand\FilamentKurdishCalendar\Support\KurdishCalendarConverter::NAWROZ_MONTH,
-        'nawrozDay' => \Rawand\FilamentKurdishCalendar\Support\KurdishCalendarConverter::NAWROZ_DAY,
-        'monthLengths' => \Rawand\FilamentKurdishCalendar\Support\KurdishCalendarConverter::MONTH_LENGTHS_BASE,
+        'yearOffset' => \Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter::YEAR_OFFSET,
+        'nawrozMonth' => \Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter::NAWROZ_MONTH,
+        'nawrozDay' => \Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter::NAWROZ_DAY,
+        'monthLengths' => \Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter::MONTH_LENGTHS_BASE,
     ];
 @endphp
 
-@once('rawand-filament-kurdish-calendar-picker-layout')
+@once('rawand201-filament-kurdish-calendar-picker-layout')
     <style>
         .fi-kurdish-calendar-picker .fi-fo-date-time-picker-panel-header {
             overflow: visible;

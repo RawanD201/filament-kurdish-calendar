@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Carbon;
-use Rawand\FilamentKurdishCalendar\Support\KurdishCalendarConverter;
+use Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter;
 
 it('maps Nawroz to month 1 day 1', function () {
     $k = KurdishCalendarConverter::fromGregorian(Carbon::create(2026, 3, 21, 12, 0, 0, 'UTC'));

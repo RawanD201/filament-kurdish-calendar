@@ -62,7 +62,7 @@ TextEntry::make('updated_at')->kurdishDateTime();
 **Forms (Kurdish picker UI)**
 
 ```php
-use Rawand\FilamentKurdishCalendar\Forms\Components\KurdishDatePicker;
+use Rawand201\FilamentKurdishCalendar\Forms\Components\KurdishDatePicker;
 
 KurdishDatePicker::make('birth_date');
 ```
@@ -88,8 +88,8 @@ TextColumn::make('created_at')->kurdishDate('j F Y');
 ## Programmatic conversion
 
 ```php
-use Rawand\FilamentKurdishCalendar\Support\KurdishCalendarConverter;
-use Rawand\FilamentKurdishCalendar\Support\KurdishCalendarFormatter;
+use Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter;
+use Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarFormatter;
 use Illuminate\Support\Carbon;
 
 $parts = KurdishCalendarConverter::fromGregorian(Carbon::now());

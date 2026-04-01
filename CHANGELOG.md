@@ -15,3 +15,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Nawroz anchor (March 21) and base month lengths are enforced in code (not configurable).
 - Package config defaults are static (no env usage).
 
+### Breaking
+- PHP namespace is now `Rawand201\FilamentKurdishCalendar\...` (was `Rawand\FilamentKurdishCalendar\...`). Update all `use` statements and class references.
+
