@@ -1,5 +1,7 @@
 # Filament Kurdish Calendar
 
+<img src="https://raw.githubusercontent.com/RawanD201/filament-kurdish-calendar/main/docs/banner.jpg" alt="Filament Kurdish Calendar" width="1000" />
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)
 [![Total Downloads](https://img.shields.io/packagist/dt/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)
 [![License](https://img.shields.io/packagist/l/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)

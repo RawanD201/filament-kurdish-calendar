@@ -2,7 +2,6 @@
 
 /.github export-ignore
 /tests export-ignore
-/docs export-ignore
 /.phpunit.result.cache export-ignore
 /phpunit.xml.dist export-ignore
 /phpstan.neon.dist export-ignore
