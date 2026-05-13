@@ -1,6 +1,6 @@
 <?php
 
-namespace Rawand201\FilamentKurdishCalendar\Support;
+namespace Entensy\FilamentKurdishCalendar\Support;
 
 use Carbon\CarbonInterface;
 use Illuminate\Support\Carbon;

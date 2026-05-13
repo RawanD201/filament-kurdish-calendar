@@ -16,5 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Package config defaults are static (no env usage).
 
 ### Breaking
-- PHP namespace is now `Rawand201\FilamentKurdishCalendar\...` (was `Rawand\FilamentKurdishCalendar\...`). Update all `use` statements and class references.
+- Composer package name is now `entensy/filament-kurdish-calendar` (was `rawand201/filament-kurdish-calendar`). Update your `composer.json`.
+- PHP namespace is now `Entensy\FilamentKurdishCalendar\...` (was `Rawand\FilamentKurdishCalendar\...`). Update all `use` statements and class references.
 

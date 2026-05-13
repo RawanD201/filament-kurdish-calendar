@@ -1,6 +1,6 @@
 <?php
 
-namespace Rawand201\FilamentKurdishCalendar;
+namespace Entensy\FilamentKurdishCalendar;
 
 use Closure;
 use Filament\Infolists\Components\TextEntry;
@@ -8,7 +8,7 @@ use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Carbon;
-use Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarFormatter;
+use Entensy\FilamentKurdishCalendar\Support\KurdishCalendarFormatter;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -27,7 +27,7 @@ class FilamentKurdishCalendarServiceProvider extends PackageServiceProvider
     {
         FilamentAsset::register([
             AlpineComponent::make('kurdish-date-picker', __DIR__.'/../resources/js/kurdish-date-picker.js'),
-        ], 'rawand201/filament-kurdish-calendar');
+        ], 'entensy/filament-kurdish-calendar');
 
         TextColumn::macro('kurdishDate', function (string|Closure|null $format = null, ?string $timezone = null) {
             $format ??= fn (): string => (string) config(

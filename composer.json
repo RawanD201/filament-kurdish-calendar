@@ -1,5 +1,5 @@
 {
-    "name": "rawand201/filament-kurdish-calendar",
+    "name": "entensy/filament-kurdish-calendar",
     "type": "library",
     "description": "Kurdish calendar for Filament tables, infolists, and date pickers",
     "keywords": [
@@ -10,15 +10,15 @@
         "calendar",
         "laravel"
     ],
-    "homepage": "https://github.com/RawanD201/filament-kurdish-calendar",
+    "homepage": "https://github.com/Entensy/filament-kurdish-calendar",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/RawanD201/filament-kurdish-calendar/issues",
-        "source": "https://github.com/RawanD201/filament-kurdish-calendar"
+        "issues": "https://github.com/Entensy/filament-kurdish-calendar/issues",
+        "source": "https://github.com/Entensy/filament-kurdish-calendar"
     },
     "authors": [
         {
-            "name": "RawanD201",
+            "name": "Entensy",
             "email": "rawandrasool@proton.me",
             "role": "Developer"
         }
@@ -42,18 +42,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Rawand201\\FilamentKurdishCalendar\\": "src/"
+            "Entensy\\FilamentKurdishCalendar\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rawand201\\FilamentKurdishCalendar\\Tests\\": "tests/"
+            "Entensy\\FilamentKurdishCalendar\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Rawand201\\FilamentKurdishCalendar\\FilamentKurdishCalendarServiceProvider"
+                "Entensy\\FilamentKurdishCalendar\\FilamentKurdishCalendarServiceProvider"
             ]
         }
     },

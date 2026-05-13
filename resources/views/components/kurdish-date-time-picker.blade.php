@@ -34,14 +34,14 @@
     $livewireKey = $getLivewireKey();
 
     $kurdishRules = [
-        'yearOffset' => \Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter::YEAR_OFFSET,
-        'nawrozMonth' => \Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter::NAWROZ_MONTH,
-        'nawrozDay' => \Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter::NAWROZ_DAY,
-        'monthLengths' => \Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter::MONTH_LENGTHS_BASE,
+        'yearOffset' => \Entensy\FilamentKurdishCalendar\Support\KurdishCalendarConverter::YEAR_OFFSET,
+        'nawrozMonth' => \Entensy\FilamentKurdishCalendar\Support\KurdishCalendarConverter::NAWROZ_MONTH,
+        'nawrozDay' => \Entensy\FilamentKurdishCalendar\Support\KurdishCalendarConverter::NAWROZ_DAY,
+        'monthLengths' => \Entensy\FilamentKurdishCalendar\Support\KurdishCalendarConverter::MONTH_LENGTHS_BASE,
     ];
 @endphp
 
-@once('rawand201-filament-kurdish-calendar-picker-layout')
+@once('entensy-filament-kurdish-calendar-picker-layout')
     <style>
         .fi-kurdish-calendar-picker .fi-fo-date-time-picker-panel-header {
             overflow: visible;
@@ -129,7 +129,7 @@
         @else
             <div
                 x-load
-                x-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('kurdish-date-picker', 'rawand201/filament-kurdish-calendar') }}"
+                x-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('kurdish-date-picker', 'entensy/filament-kurdish-calendar') }}"
                 x-data="kurdishDatePickerFormComponent({
                     rules: @js($kurdishRules),
                     monthNames: @js(array_values(__('filament-kurdish-calendar::months'))),

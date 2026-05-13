@@ -1,11 +1,11 @@
 # Filament Kurdish Calendar
 
-<img src="https://raw.githubusercontent.com/RawanD201/filament-kurdish-calendar/main/docs/banner.jpg" alt="Filament Kurdish Calendar" width="1000" />
+<img src="https://raw.githubusercontent.com/Entensy/filament-kurdish-calendar/main/docs/banner.jpg" alt="Filament Kurdish Calendar" width="1000" />
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)
-[![Total Downloads](https://img.shields.io/packagist/dt/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)
-[![License](https://img.shields.io/packagist/l/rawand201/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/rawand201/filament-kurdish-calendar)
-[![CI](https://github.com/RawanD201/filament-kurdish-calendar/actions/workflows/ci.yml/badge.svg)](https://github.com/RawanD201/filament-kurdish-calendar/actions/workflows/ci.yml)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/entensy/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/entensy/filament-kurdish-calendar)
+[![Total Downloads](https://img.shields.io/packagist/dt/entensy/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/entensy/filament-kurdish-calendar)
+[![License](https://img.shields.io/packagist/l/entensy/filament-kurdish-calendar.svg?style=flat-square)](https://packagist.org/packages/entensy/filament-kurdish-calendar)
+[![CI](https://github.com/Entensy/filament-kurdish-calendar/actions/workflows/ci.yml/badge.svg)](https://github.com/Entensy/filament-kurdish-calendar/actions/workflows/ci.yml)
 
 Kurdish calendar formatting and picker UI for Filament.
 
@@ -22,7 +22,7 @@ This package **does not change database storage**. Values are still stored as **
 ## Installation
 
 ```bash
-composer require rawand201/filament-kurdish-calendar
+composer require entensy/filament-kurdish-calendar
 ```
 
 ```bash
@@ -64,7 +64,7 @@ TextEntry::make('updated_at')->kurdishDateTime();
 **Forms (Kurdish picker UI)**
 
 ```php
-use Rawand201\FilamentKurdishCalendar\Forms\Components\KurdishDatePicker;
+use Entensy\FilamentKurdishCalendar\Forms\Components\KurdishDatePicker;
 
 KurdishDatePicker::make('birth_date');
 ```
@@ -90,8 +90,8 @@ TextColumn::make('created_at')->kurdishDate('j F Y');
 ## Programmatic conversion
 
 ```php
-use Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarConverter;
-use Rawand201\FilamentKurdishCalendar\Support\KurdishCalendarFormatter;
+use Entensy\FilamentKurdishCalendar\Support\KurdishCalendarConverter;
+use Entensy\FilamentKurdishCalendar\Support\KurdishCalendarFormatter;
 use Illuminate\Support\Carbon;
 
 $parts = KurdishCalendarConverter::fromGregorian(Carbon::now());
