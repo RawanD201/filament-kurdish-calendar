@@ -7,6 +7,11 @@ use Illuminate\Support\Carbon;
 
 final class KurdishCalendarFormatter
 {
+    private const KURDISH_DIGITS = [
+        '0' => '٠', '1' => '١', '2' => '٢', '3' => '٣', '4' => '٤',
+        '5' => '٥', '6' => '٦', '7' => '٧', '8' => '٨', '9' => '٩',
+    ];
+
     /**
      * Format a single instant: Kurdish date tokens (Y y m n d j F) plus Gregorian clock
      * tokens (H h i s g G A a) from the same moment in $timezone.
@@ -22,6 +27,7 @@ final class KurdishCalendarFormatter
         $F = filled($locale)
             ? __($monthKey, [], $locale)
             : __($monthKey);
+        $useKurdishDigits = ($locale ?? app()->getLocale()) === 'ckb';
 
         $Y = str_pad((string) $k['year'], 4, '0', STR_PAD_LEFT);
         $y = substr($Y, -2);
@@ -59,6 +65,6 @@ final class KurdishCalendarFormatter
             };
         }
 
-        return $out;
+        return $useKurdishDigits ? strtr($out, self::KURDISH_DIGITS) : $out;
     }
 }
