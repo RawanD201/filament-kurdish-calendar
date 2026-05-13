@@ -99,6 +99,24 @@ function pad2(n) {
     return String(n ?? 0).padStart(2, '0')
 }
 
+const KURDISH_DIGITS = '٠١٢٣٤٥٦٧٨٩'
+
+function toKurdishDigits(value) {
+    if (value === null || value === undefined) {
+        return ''
+    }
+    return String(value).replace(/[0-9]/g, (d) => KURDISH_DIGITS[+d])
+}
+
+function fromKurdishDigits(value) {
+    if (value === null || value === undefined) {
+        return ''
+    }
+    return String(value)
+        .replace(/[٠-٩]/g, (d) => String(d.charCodeAt(0) - 0x0660))
+        .replace(/[۰-۹]/g, (d) => String(d.charCodeAt(0) - 0x06F0))
+}
+
 function formatKurdishDisplay(format, k, monthNames, hour, minute, second, hasTime) {
     let out = ''
     for (let i = 0; i < format.length; i++) {
@@ -108,32 +126,32 @@ function formatKurdishDisplay(format, k, monthNames, hour, minute, second, hasTi
         }
         const c = format[i]
         if (c === 'Y') {
-            out += String(k.year).padStart(4, '0')
+            out += toKurdishDigits(String(k.year).padStart(4, '0'))
         } else if (c === 'y') {
-            out += String(k.year).slice(-2)
+            out += toKurdishDigits(String(k.year).slice(-2))
         } else if (c === 'm') {
-            out += pad2(k.month)
+            out += toKurdishDigits(pad2(k.month))
         } else if (c === 'n') {
-            out += String(k.month)
+            out += toKurdishDigits(k.month)
         } else if (c === 'd') {
-            out += pad2(k.day)
+            out += toKurdishDigits(pad2(k.day))
         } else if (c === 'j') {
-            out += String(k.day)
+            out += toKurdishDigits(k.day)
         } else if (c === 'F') {
             out += monthNames[k.month - 1] ?? ''
         } else if (hasTime && c === 'H') {
-            out += pad2(hour)
+            out += toKurdishDigits(pad2(hour))
         } else if (hasTime && c === 'h') {
             const h = hour % 12 || 12
-            out += String(h)
+            out += toKurdishDigits(h)
         } else if (hasTime && c === 'i') {
-            out += pad2(minute)
+            out += toKurdishDigits(pad2(minute))
         } else if (hasTime && c === 's') {
-            out += pad2(second)
+            out += toKurdishDigits(pad2(second))
         } else if (hasTime && c === 'G') {
-            out += String(hour ?? 0)
+            out += toKurdishDigits(hour ?? 0)
         } else if (hasTime && c === 'g') {
-            out += String(hour % 12 || 12)
+            out += toKurdishDigits(hour % 12 || 12)
         } else {
             out += c
         }
@@ -184,6 +202,8 @@ export default function kurdishDatePickerFormComponent({
         state,
         rules,
         monthNames,
+        toKurdishDigits,
+        fromKurdishDigits,
         displayText: '',
         displayFormat,
         firstDayOfWeek: firstDayOfWeek ?? 1,

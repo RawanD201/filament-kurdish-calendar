@@ -263,9 +263,10 @@
                             </div>
 
                             <input
-                                type="number"
+                                type="text"
                                 inputmode="numeric"
-                                x-model.debounce="focusedKurdishYear"
+                                x-bind:value="toKurdishDigits(focusedKurdishYear)"
+                                x-on:input.debounce="focusedKurdishYear = parseInt(fromKurdishDigits($event.target.value), 10) || focusedKurdishYear"
                                 class="fi-fo-date-time-picker-year-input"
                             />
                         </div>
@@ -298,7 +299,7 @@
                                 x-bind:key="day"
                             >
                                 <div
-                                    x-text="day"
+                                    x-text="toKurdishDigits(day)"
                                     x-on:click="dayIsDisabled(day) || selectDate(day)"
                                     x-on:mouseenter="setFocusedDay(day)"
                                     role="option"
@@ -318,12 +319,10 @@
                     @if ($hasTime)
                         <div class="fi-fo-date-time-picker-time-inputs">
                             <input
-                                max="23"
-                                min="0"
-                                step="{{ $getHoursStep() }}"
-                                type="number"
+                                type="text"
                                 inputmode="numeric"
-                                x-model.debounce="hour"
+                                x-bind:value="toKurdishDigits(String(hour ?? 0).padStart(2, '0'))"
+                                x-on:input.debounce="hour = Math.max(0, Math.min(23, parseInt(fromKurdishDigits($event.target.value), 10) || 0))"
                             />
 
                             <span
@@ -333,12 +332,10 @@
                             </span>
 
                             <input
-                                max="59"
-                                min="0"
-                                step="{{ $getMinutesStep() }}"
-                                type="number"
+                                type="text"
                                 inputmode="numeric"
-                                x-model.debounce="minute"
+                                x-bind:value="toKurdishDigits(String(minute ?? 0).padStart(2, '0'))"
+                                x-on:input.debounce="minute = Math.max(0, Math.min(59, parseInt(fromKurdishDigits($event.target.value), 10) || 0))"
                             />
 
                             @if ($hasSeconds)
@@ -349,12 +346,10 @@
                                 </span>
 
                                 <input
-                                    max="59"
-                                    min="0"
-                                    step="{{ $getSecondsStep() }}"
-                                    type="number"
+                                    type="text"
                                     inputmode="numeric"
-                                    x-model.debounce="second"
+                                    x-bind:value="toKurdishDigits(String(second ?? 0).padStart(2, '0'))"
+                                    x-on:input.debounce="second = Math.max(0, Math.min(59, parseInt(fromKurdishDigits($event.target.value), 10) || 0))"
                                 />
                             @endif
                         </div>
